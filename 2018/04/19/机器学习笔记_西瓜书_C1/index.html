@@ -69,7 +69,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> Word count:</span>
-            <span class="post-count">624</span>
+            <span class="post-count">591</span>
         </span>
     </span>
 
@@ -104,16 +104,50 @@
 
       
       <h2 id="1-总起"><a href="#1-总起" class="headerlink" title="1.总起"></a>1.总起</h2><p> &#8195;&#8195;机器学习是一门这样的学科：它致力于研究如何通过计算的手段，利用经验来改善系统自身的性能。<br> &#8195;&#8195;西瓜书用“模型”泛指从数据中学得的结果。有的文献用“模型”指全局性结果（例如一棵决策树），而用“模式”指局部性结果（例如一条规则）。</p>
-<h2 id="2-专业术语"><a href="#2-专业术语" class="headerlink" title="2.专业术语"></a>2.专业术语</h2><p>（1） 1_01 数据集    data set<br>（2） 1_02 示例/样本 instance/sample<br>（3） 2_01 属性/特征 attribute/feature<br>（4） 2_02 属性值    attribute value<br>（5） 2_03 属性空间/ attribute space<br>           样本空间/ sample space<br>           输入空间<br>（6） 3_01 特征向量  feature vector</p>
-<p>（7） 4_01 维数      dimensionality</p>
-<p>（8） 5_01 学习/训练 learning/training<br>（9） 5_02 训练数据  training data<br>（10）5_03 训练样本  training sample<br>（11）5_04 训练集    training set<br>（12）6_01 假设      hypothesis<br>（13）6_02 真相/真实 ground-truth<br>（14）7_01 学习器    learner</p>
-<p>（15）8_01 预测      prediction<br>（16）9_01 标记      label<br>（17）9_02 样例      example<br>（18) 9_03 标记空间/ label space<br>           输出空间</p>
-<p>（19）10_01分类      classification<br>（20）10_02回归      regression<br>（21）11_01二分类    binary classification<br>（22）11_02正类      positive class<br>（23）11_03反类      negative class<br>（24）11_04多分类    multi-classification          </p>
-<p>（25）12_01测试      testing<br>（26）12_02测试样本  testing sample</p>
-<p>（27）13_01聚类      clustering<br>（28）13_02簇        cluster</p>
-<p>（29）14_01监督学习  supervised learning<br>（30）14_02无监督学习unsupervised learning</p>
-<p>（31）15_01泛化      generalization<br>（32）16_01分布      distribution<br>（33）16_02独立同分布independent and identically distributed （简称i.i.d.）</p>
-<h2 id="3-假设空间"><a href="#3-假设空间" class="headerlink" title="3.假设空间"></a>3.假设空间</h2><pre><code>17_01   归纳    induction
+<h2 id="2-专业术语"><a href="#2-专业术语" class="headerlink" title="2.专业术语"></a>2.专业术语</h2><pre><code>1_01 数据集    data set
+1_02 示例/样本 instance/sample
+2_01 属性/特征 attribute/feature
+2_02 属性值    attribute value
+2_03 属性空间/ attribute space
+     样本空间/ sample space
+     输入空间 
+3_01 特征向量  feature vector
+
+4_01 维数      dimensionality
+
+5_01 学习/训练 learning/training
+5_02 训练数据  training data
+5_03 训练样本  training sample
+5_04 训练集    training set
+6_01 假设      hypothesis
+6_02 真相/真实 ground-truth
+7_01 学习器    learner
+
+8_01 预测      prediction
+9_01 标记      label
+9_02 样例      example
+9_03 标记空间/ label space
+     输出空间
+
+10_01分类      classification
+10_02回归      regression
+11_01二分类    binary classification
+11_02正类      positive class
+11_03反类      negative class
+11_04多分类    multi-classification          
+
+12_01测试      testing
+12_02测试样本  testing sample
+
+13_01聚类      clustering
+13_02簇        cluster
+
+14_01监督学习  supervised learning
+14_02无监督学习unsupervised learning
+
+15_01泛化      generalization
+16_01分布      distribution
+16_02独立同分布independent and identically distributed （简称i.i.d.）</code></pre><h2 id="3-假设空间"><a href="#3-假设空间" class="headerlink" title="3.假设空间"></a>3.假设空间</h2><pre><code>17_01   归纳    induction
 17_01_01归纳学习inductive learning
 17_01_02概念学习concept learning
 17_02   演绎    deduction</code></pre><p> &#8195;&#8195;归纳和演绎是科学推理的两大基本手段。前者是从特殊到一般的“泛化”过程，即从具体的事实归结出一般性规律；后者则是从一般到特殊的“特化”过程，即从基础原理推演出具体情况。例如，在数学公理系统中，基于一组公理和推理规则推导出与之相洽的定理，这是演绎；而“从样例中学习”显然是一个归纳的过程，因此亦称“归纳学习”。<br> &#8195;&#8195;“归纳学习”亦称“概念学习”或“概念形成”。 概念学习中最基本的是布尔概念学习。<br> &#8195;&#8195; 我们可以把学习过程看成是一个在所有假设组成的空间中进行搜索的过程，搜索目标是找到所有与训练集“匹配”的假设。假设的大小一旦确定，假设空间及其规模大小就确定了。<br>      18_01   版本空间 version space  </p>
