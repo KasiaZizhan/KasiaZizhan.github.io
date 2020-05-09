@@ -9,7 +9,7 @@
     
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>
-    机器学习_周志华老师西瓜书_Note of Chapter 1 |  子瞻の博客
+    Archives: 2020/5 |  子瞻の博客
   </title>
   <meta name="generator" content="hexo-theme-ayer">
   
@@ -41,288 +41,50 @@
   <div id="app">
     <main class="content on">
       <section class="outer">
-  <article id="post-机器学习笔记_西瓜书_C1" class="article article-type-post" itemscope
-  itemprop="blogPost" data-scroll-reveal>
-
-  <div class="article-inner">
+  <article class="articles">
     
-    <header class="article-header">
+    
+    <h1 class="page-type-title">2020/5</h1>
+    
+    
+  
+  
+  
+  
+  
+  
+  <div class="archives-wrap">
+    <div class="archive-year-wrap">
+      <a href="/archives/2020" class="archive-year">2020</a>
+    </div>
+    <div class="archives">
+      
+      <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2020/05/09/%E7%BD%91%E5%8F%8B%E7%BB%8F%E9%AA%8C_%E6%9D%82%E8%B0%88/" class="archive-article-date">
+  <time datetime="2020-05-09T14:12:00.605Z" itemprop="datePublished">05/09</time>
+</a>
        
-<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  机器学习_周志华老师西瓜书_Note of Chapter 1
-</h1>
+<h2 itemprop="name">
+  <a class="archive-article-title" href="/2020/05/09/%E7%BD%91%E5%8F%8B%E7%BB%8F%E9%AA%8C_%E6%9D%82%E8%B0%88/"
+    >网友经验_杂谈</a> 
+</h2>
  
 
     </header>
     
-
     
-    <div class="article-meta">
-      <a href="/2018/04/19/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0_%E8%A5%BF%E7%93%9C%E4%B9%A6_C1/" class="article-date">
-  <time datetime="2018-04-19T01:08:12.000Z" itemprop="datePublished">2018-04-19</time>
-</a>
-      
-      
-      
-<div class="word_count">
-    <span class="post-time">
-        <span class="post-meta-item-icon">
-            <i class="ri-quill-pen-line"></i>
-            <span class="post-meta-item-text"> Word count:</span>
-            <span class="post-count">878</span>
-        </span>
-    </span>
-
-    <span class="post-time">
-        &nbsp; | &nbsp;
-        <span class="post-meta-item-icon">
-            <i class="ri-book-open-line"></i>
-            <span class="post-meta-item-text"> Reading time≈</span>
-            <span class="post-count">3 min</span>
-        </span>
-    </span>
-</div>
-
-      
-    </div>
-    
-
-    
-    
-    <div class="tocbot"></div>
-
-
-
-
-
-    
-
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-      
-
-      
-      <h2 id="1-总起"><a href="#1-总起" class="headerlink" title="1.总起"></a>1.总起</h2><p> &#8195;&#8195;机器学习是一门这样的学科：它致力于研究如何通过计算的手段，利用经验来改善系统自身的性能。<br> &#8195;&#8195;西瓜书用“模型”泛指从数据中学得的结果。有的文献用“模型”指全局性结果（例如一棵决策树），而用“模式”指局部性结果（例如一条规则）。</p>
-<h2 id="2-专业术语"><a href="#2-专业术语" class="headerlink" title="2.专业术语"></a>2.专业术语</h2><pre><code>1_01 数据集    data set
-1_02 示例/样本 instance/sample
-2_01 属性/特征 attribute/feature
-2_02 属性值    attribute value
-2_03 属性空间/ attribute space
-     样本空间/ sample space
-     输入空间 
-3_01 特征向量  feature vector
-
-4_01 维数      dimensionality
-
-5_01 学习/训练 learning/training
-5_02 训练数据  training data
-5_03 训练样本  training sample
-5_04 训练集    training set
-6_01 假设      hypothesis
-6_02 真相/真实 ground-truth
-7_01 学习器    learner
-
-8_01 预测      prediction
-9_01 标记      label
-9_02 样例      example
-9_03 标记空间/ label space
-     输出空间
-
-10_01分类      classification
-10_02回归      regression
-11_01二分类    binary classification
-11_02正类      positive class
-11_03反类      negative class
-11_04多分类    multi-classification          
-
-12_01测试      testing
-12_02测试样本  testing sample
-
-13_01聚类      clustering
-13_02簇        cluster
-
-14_01监督学习  supervised learning
-14_02无监督学习unsupervised learning
-
-15_01泛化      generalization
-16_01分布      distribution
-16_02独立同分布independent and identically distributed （简称i.i.d.）</code></pre><h2 id="3-假设空间"><a href="#3-假设空间" class="headerlink" title="3.假设空间"></a>3.假设空间</h2><pre><code>17_01   归纳    induction
-17_01_01归纳学习inductive learning
-17_01_02概念学习concept learning
-17_02   演绎    deduction
-18_01   版本空间 version space       </code></pre><p> &#8195;&#8195;归纳和演绎是科学推理的两大基本手段。前者是从特殊到一般的“泛化”过程，即从具体的事实归结出一般性规律；后者则是从一般到特殊的“特化”过程，即从基础原理推演出具体情况。例如，在数学公理系统中，基于一组公理和推理规则推导出与之相洽的定理，这是演绎；而“从样例中学习”显然是一个归纳的过程，因此亦称“归纳学习”。<br> &#8195;&#8195;“归纳学习”亦称“概念学习”或“概念形成”。 概念学习中最基本的是布尔概念学习。<br> &#8195;&#8195;我们可以把学习过程看成是一个在所有假设组成的空间中进行搜索的过程，搜索目标是找到所有与训练集“匹配”的假设。假设的大小一旦确定，假设空间及其规模大小就确定了。<br> &#8195;&#8195;现实问题中我们常面临着很大的假设空间，但学习过程是基于有限样本训练集进行的，因此，有多个假设与训练集一致，即存在着一个与训练集一致的假设集合，我们称之为版本空间。</p>
-<h2 id="4-归纳偏好"><a href="#4-归纳偏好" class="headerlink" title="4.归纳偏好"></a>4.归纳偏好</h2><pre><code>19_01   归纳偏好 inductive bias
-19_02   奥卡姆剃刀Occam&apos;s razor</code></pre><p> &#8195;&#8195;归纳偏好：机器学习算法在学习过程中对某种类型假设的偏好。通俗的讲就是“什么模型更好“这么一个问题。<br> &#8195;&#8195;归纳偏好可看作学习算法自身在一个可能很庞大的假设空间中对假设进行选择的“启发式”或价值观。<br> &#8195;&#8195;奥卡姆剃刀是一种常用的科学研究中最基本的原则，即“若有多个假设与观察一致，则选最简单的那个” 。<br> &#8195;&#8195;奥卡姆剃刀并非唯一可行的原则。退一步讲，它本身也存在不同的诠释。</p>
-<h2 id="5-机器学习的发展史"><a href="#5-机器学习的发展史" class="headerlink" title="5.机器学习的发展史"></a>5.机器学习的发展史</h2><pre><code>符号主义
-连接主义
-机器学习
-数据挖掘
-统计学         </code></pre>
-      
-      <!-- reward -->
-      
-      <div id="reward-btn">
-        Donate
-      </div>
-      
-    </div>
-    
-    
-      <!-- copyright -->
-      
-        <div class="declare">
-          <ul class="post-copyright">
-            <li>
-              <i class="ri-copyright-line"></i>
-              <strong>Copyright： </strong>
-              Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source.
-            </li>
-          </ul>
-        </div>
-        
-    <footer class="article-footer">
-      
-          
-<div class="share-btn">
-      <span class="share-sns share-outer">
-        <i class="ri-share-forward-line"></i>
-        分享
-      </span>
-      <div class="share-wrap">
-        <i class="arrow"></i>
-        <div class="share-icons">
-          
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="ri-weibo-fill"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="ri-wechat-fill"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="ri-qq-fill"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="ri-douban-line"></i>
-          </a>
-          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a> -->
-          
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="ri-facebook-circle-fill"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="ri-twitter-fill"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="ri-google-fill"></i>
-          </a>
-        </div>
-      </div>
-</div>
-
-<div class="wx-share-modal">
-    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://kasiazizhan.github.io/2018/04/19/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0_%E8%A5%BF%E7%93%9C%E4%B9%A6_C1/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div id="share-mask"></div>
-      
-      
-
-    </footer>
-
   </div>
-
-  
-  
-  <nav class="article-nav">
-    
-      <a href="/2018/04/20/%E4%BA%8C%E7%BA%A7%E5%BB%BA%E9%80%A0%E5%B8%88_%E6%96%BD%E5%B7%A5%E6%B3%95%E8%A7%84%E5%AE%9E%E5%8A%A1_%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/" class="article-nav-link">
-        <strong class="article-nav-caption">上一篇</strong>
-        <div class="article-nav-title">
-          
-            二级建造师_施工/法规/实务_知识汇总（长期更新笔记）
-          
-        </div>
-      </a>
-    
-    
-      <a href="/2018/04/18/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" class="article-nav-link">
-        <strong class="article-nav-caption">下一篇</strong>
-        <div class="article-nav-title">机器学习</div>
-      </a>
-    
-  </nav>
-
-
-  
-
-  
-  
-<!-- valine评论 -->
-<div id="vcomments-box">
-    <div id="vcomments">
-    </div>
-</div>
-<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src='https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js'></script>
-<script>
-    new Valine({
-        el: '#vcomments',
-        app_id: '',
-        app_key: '',
-        path: window.location.pathname,
-        notify: 'false',
-        verify: 'false',
-        avatar: 'monsterid',
-        placeholder: '给我的文章加点评论吧~',
-        recordIP: true
-    });
-    const infoEle = document.querySelector('#vcomments .info');
-    if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
-        infoEle.childNodes.forEach(function (item) {
-            item.parentNode.removeChild(item);
-        });
-    }
-</script>
-<style>
-    #vcomments-box {
-        padding: 5px 30px;
-    }
-
-    @media screen and (max-width: 800px) {
-        #vcomments-box {
-            padding: 5px 0px;
-        }
-    }
-
-    #vcomments-box #vcomments {
-        background-color: #fff;
-    }
-
-    .v .vlist .vcard .vh {
-        padding-right: 20px;
-    }
-
-    .v .vlist .vcard {
-        padding-left: 10px;
-    }
-</style>
-
-  
-
-  
-  
-  
-  
-  
-
 </article>
+      
+      
+    </div>
+  </div>
+  
+  
+
+  
 </section>
       <footer class="footer">
   <div class="outer">
@@ -494,23 +256,6 @@
 </script>
 
 <!-- Tocbot -->
-
-
-<script src="/js/tocbot.min.js"></script>
-
-<script>
-  tocbot.init({
-    tocSelector: '.tocbot',
-    contentSelector: '.article-entry',
-    headingSelector: 'h1, h2, h3, h4, h5, h6',
-    hasInnerContainers: true,
-    scrollSmooth: true,
-    scrollContainer: 'main',
-    positionFixedSelector: '.tocbot',
-    positionFixedClass: 'is-position-fixed',
-    fixedSidebarOffset: 'auto'
-  });
-</script>
 
 <script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
