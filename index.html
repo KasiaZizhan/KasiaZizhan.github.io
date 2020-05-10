@@ -80,7 +80,7 @@
     
     
     
-    <article id="post-机器学习笔记_西瓜书_C2" class="article article-type-post" itemscope
+    <article id="post-机器学习笔记_西瓜书_C3" class="article article-type-post" itemscope
   itemprop="blogPost" data-scroll-reveal>
 
   <div class="article-inner">
@@ -88,8 +88,8 @@
     <header class="article-header">
        
 <h2 itemprop="name">
-  <a class="article-title" href="/2018/04/27/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0_%E8%A5%BF%E7%93%9C%E4%B9%A6_C2/"
-    >机器学习_周志华老师西瓜书_Note of Chapter 2</a> 
+  <a class="article-title" href="/2018/04/26/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0_%E8%A5%BF%E7%93%9C%E4%B9%A6_C3/"
+    >机器学习_周志华老师西瓜书_Note of Chapter 3 线性模型</a> 
 </h2>
  
 
@@ -98,8 +98,8 @@
 
     
     <div class="article-meta">
-      <a href="/2018/04/27/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0_%E8%A5%BF%E7%93%9C%E4%B9%A6_C2/" class="article-date">
-  <time datetime="2018-04-27T05:00:42.000Z" itemprop="datePublished">2018-04-27</time>
+      <a href="/2018/04/26/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0_%E8%A5%BF%E7%93%9C%E4%B9%A6_C3/" class="article-date">
+  <time datetime="2018-04-26T12:41:32.000Z" itemprop="datePublished">2018-04-26</time>
 </a>
       
       
@@ -116,50 +116,16 @@
       
 
       
-      <h2 id="1-经验误差与过拟合"><a href="#1-经验误差与过拟合" class="headerlink" title="1.经验误差与过拟合"></a>1.经验误差与过拟合</h2><pre><code>1_01  错误率        error rate
-1_02  精度          accuracy
-2_01  误差          error
-2_02  训练误差/     training error
-      经验误差      empirical error
-2_03  泛化误差      generalization error
-3_01  过拟合        overfitting
-3_02  欠拟合        underfitting
-4_01  模型选择      model selection</code></pre><h2 id="2-评估方法"><a href="#2-评估方法" class="headerlink" title="2.评估方法"></a>2.评估方法</h2><pre><code>5_01  测试集        testing set
-5_02  测试误差      testing error
-6_01  留出法        hold-out
-6_02  分层采样      stratified  sampling    
-7_01  交叉验证法    cross validation
-7_02  k折交叉验证   k-fold cross validation
-7_03  留一法（LOO） Leave-One-Out
-8_01  自助法        bootstrapping
-8_02  自助采样法    bootstrapping sampling
-9_01  参数          parameter
-9_02  参数调节/调参  parameter tuning
-9_03* 验证集        validation set</code></pre><h2 id="3-性能度量"><a href="#3-性能度量" class="headerlink" title="3.性能度量"></a>3.性能度量</h2><pre><code>10_01 性能度量      performance measure
-10_02 均方误差      mean squared error 
-
-11_01 查准率P       precision
-11_02 查全率R       recall
-11_03_01真正例（TP）true positive
-11_03_02假正例（FP）false positive 
-11_03_03真反例（TN）true negative
-11_03_04假反例（FN）false negative
-11_04 混淆矩阵      confusion matrix
-11_05 平衡点（BET） break-event point
-11_06    F1度量
-11_06_01 Fβ度量
-11_07_01 宏查准率   macro-P
-11_07_02 宏查全率   macro-R
-11_07_03 宏F1      macro-F1
-11_08_01 微查准率   micro-P
-11_08_02 微查全率   micro-R
-11_08_03 微F1      micro-F1
-
-12_01 分类阈值      threshold 
-12_02 截断点        cut point
-13_01 ROC           Receiver Operating Characteristic
-    （受试者工作特征）
-14_01 真正例率    </code></pre>
+      <h2 id="1-基本形式"><a href="#1-基本形式" class="headerlink" title="1.基本形式"></a>1.基本形式</h2><pre><code>1_01  线性模型             linear model
+1_02  非线性模型           nonlinear model</code></pre><h2 id="2-线性回归"><a href="#2-线性回归" class="headerlink" title="2.线性回归"></a>2.线性回归</h2><pre><code>2_01  线性回归             linear regression
+2_02  多元线性回归         multivariate linear regression
+2_03  对数线性回归         log-linear regression
+2_04  广义线性回归         generalized linear model</code></pre><h2 id="3-对数线性回归"><a href="#3-对数线性回归" class="headerlink" title="3.对数线性回归"></a>3.对数线性回归</h2><pre><code>3_01  单位阶跃函数         unit-step function
+3_02  替代函数             surrogate function        
+3_03  对数几率函数         logistic function
+3_03_01几率                odds
+3_03_02对数几率            log odds
+3_03_03对数几率回归        logistic regression （其实是一种分类学习方法）</code></pre>
       
       <!-- reward -->
       
@@ -226,6 +192,123 @@
       
       <h2 id="1-施工管理"><a href="#1-施工管理" class="headerlink" title="1.施工管理"></a>1.施工管理</h2><p>1-1-1 全寿命周期：决策阶段、实施阶段、使用阶段<br>      实施阶段包括：</p>
 
+      
+      <!-- reward -->
+      
+    </div>
+    
+    
+      <!-- copyright -->
+      
+    <footer class="article-footer">
+      
+      
+
+    </footer>
+
+  </div>
+
+  
+
+  
+  
+  
+
+  
+  
+  
+
+</article>
+    
+    <article id="post-机器学习笔记_西瓜书_C2" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2018/04/21/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0_%E8%A5%BF%E7%93%9C%E4%B9%A6_C2/"
+    >机器学习_周志华老师西瓜书_Note of Chapter 2 模型评估与选择</a> 
+</h2>
+ 
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2018/04/21/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0_%E8%A5%BF%E7%93%9C%E4%B9%A6_C2/" class="article-date">
+  <time datetime="2018-04-21T05:00:42.000Z" itemprop="datePublished">2018-04-21</time>
+</a>
+      
+      
+      
+      
+    </div>
+    
+
+    
+
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+      
+
+      
+      <h2 id="1-经验误差与过拟合"><a href="#1-经验误差与过拟合" class="headerlink" title="1.经验误差与过拟合"></a>1.经验误差与过拟合</h2><pre><code>1_01  错误率        error rate
+1_02  精度          accuracy
+2_01  误差          error
+2_02  训练误差/     training error
+      经验误差      empirical error
+2_03  泛化误差      generalization error
+3_01  过拟合        overfitting
+3_02  欠拟合        underfitting
+4_01  模型选择      model selection</code></pre><h2 id="2-评估方法"><a href="#2-评估方法" class="headerlink" title="2.评估方法"></a>2.评估方法</h2><pre><code>5_01  测试集        testing set
+5_02  测试误差      testing error
+6_01  留出法        hold-out
+6_02  分层采样      stratified  sampling    
+7_01  交叉验证法    cross validation
+7_02  k折交叉验证   k-fold cross validation
+7_03  留一法（LOO） Leave-One-Out
+8_01  自助法        bootstrapping
+8_02  自助采样法    bootstrapping sampling
+9_01  参数          parameter
+9_02  参数调节/调参  parameter tuning
+9_03* 验证集        validation set</code></pre><h2 id="3-性能度量"><a href="#3-性能度量" class="headerlink" title="3.性能度量"></a>3.性能度量</h2><pre><code>10_01 性能度量      performance measure
+10_02 均方误差      mean squared error 
+
+11_01 查准率P       precision
+11_02 查全率R       recall
+11_03_01真正例（TP）true positive
+11_03_02假正例（FP）false positive 
+11_03_03真反例（TN）true negative
+11_03_04假反例（FN）false negative
+11_04 混淆矩阵      confusion matrix
+11_05 平衡点（BET） break-event point
+11_06    F1度量
+11_06_01 Fβ度量
+11_07_01 宏查准率   macro-P
+11_07_02 宏查全率   macro-R
+11_07_03 宏F1      macro-F1
+11_08_01 微查准率   micro-P
+11_08_02 微查全率   micro-R
+11_08_03 微F1      micro-F1
+
+12_01 分类阈值      threshold 
+12_02 截断点        cut point
+13_01 ROC           Receiver Operating Characteristic
+    （受试者工作特征）
+14_01 真正例率（TPR）true  positive rate
+14_02 假正例率（FPR）false positive rate    
+14_03 AUC           Area under ROC curve
+
+15_01 非均等代价     unequal cost
+15_02 代价矩阵       cost matrix
+15_03 总体代价       total cost
+15_04 代价敏感       cost-sensitive
+15_05 代价曲线       cost-curve</code></pre><h2 id="4-比较检验"><a href="#4-比较检验" class="headerlink" title="4.比较检验"></a>4.比较检验</h2><pre><code>16_00 统计假设检验   hypothesis testing</code></pre><h2 id="5-偏差与方差"><a href="#5-偏差与方差" class="headerlink" title="5.偏差与方差"></a>5.偏差与方差</h2><pre><code>17_00 偏差-方差分解  bias-variance decomposition
+17_01 偏差-方差窘境  bias-variance dilemma         </code></pre>
       
       <!-- reward -->
       
@@ -375,7 +458,7 @@
        
 <h2 itemprop="name">
   <a class="article-title" href="/2018/04/19/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0_%E8%A5%BF%E7%93%9C%E4%B9%A6_C1/"
-    >机器学习_周志华老师西瓜书_Note of Chapter 1</a> 
+    >机器学习_周志华老师西瓜书_Note of Chapter 1 绪论</a> 
 </h2>
  
 
